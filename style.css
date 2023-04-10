@@ -1,0 +1,35 @@
+body {
+    min-height: 100vh;
+    width: 100%;
+    margin: 0;
+    display: grid;
+    grid-template-areas: /* 10 x 6 grid */
+        "side side head head head head head head head head"
+        "side side cont cont cont cont cont cont cont cont"
+        "side side cont cont cont cont cont cont cont cont"
+        "side side cont cont cont cont cont cont cont cont"
+        "side side cont cont cont cont cont cont cont cont"
+        "side side cont cont cont cont cont cont cont cont";
+}
+
+/* Header and children */
+.header {
+    grid-area: head;
+    background-color: aqua;
+    display: grid;
+    
+}
+
+
+/* Sidebar and children */
+.sidebar {
+    grid-area: side;
+    background-color: beige;
+}
+
+
+/* Main Content and children */
+.content {
+    grid-area: cont;
+    background-color: brown;
+}
