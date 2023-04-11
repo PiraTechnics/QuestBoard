@@ -17,14 +17,21 @@ body {
     grid-area: head;
     background-color: aqua;
     display: grid;
+    min-width: 80vw;
+    max-width: 90vw;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: repeat(2, 1fr);
 }
 
 /* Sidebar and children */
 .sidebar {
     grid-area: side;
+    min-width: 200px;
+    max-width: 20vw;
     background-color: beige;
     display: grid;
-    grid-template-rows: 1fr repeat(2, 4fr);
+    grid-template-rows: 1fr repeat(4, 3fr);
+    gap: 10px;
 }
 
 .menu-item {
@@ -33,17 +40,20 @@ body {
         minmax(10px, 20%) minmax(20px, 80%);
     justify-items: start;
     align-items: center;
-    padding-left: 10px;
+    padding-left: 20px;
+    padding-top: 2px;
 }
-
-
 
 .icon {
-    width: 25px;
+    width: 30px;
+    justify-self: center;
+    padding-right: 20px;
 }
 
-.logo > img {
+.logo > * {
     width: 50px;
+    padding-top: 10px;
+    margin-left: 10px;
 }
 
 
