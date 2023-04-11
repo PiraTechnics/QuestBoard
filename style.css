@@ -17,14 +17,33 @@ body {
     grid-area: head;
     background-color: aqua;
     display: grid;
-    
 }
-
 
 /* Sidebar and children */
 .sidebar {
     grid-area: side;
     background-color: beige;
+    display: grid;
+    grid-template-rows: 1fr repeat(2, 4fr);
+}
+
+.menu-item {
+    display: grid;
+    grid-template-columns: 
+        minmax(10px, 20%) minmax(20px, 80%);
+    justify-items: start;
+    align-items: center;
+    padding-left: 10px;
+}
+
+
+
+.icon {
+    width: 25px;
+}
+
+.logo > img {
+    width: 50px;
 }
 
 

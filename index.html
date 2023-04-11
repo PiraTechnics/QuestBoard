@@ -1,17 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>QuestBoard</title>
 </head>
+
 <body>
-    <header>Header goes here</header>
-    <nav>Sidebar here</nav>
-    <main>Everything else goes here
+    <header class="header">
+        <div id="search-container"></div>
+        <div id="profile-container"></div>
+        <div id="welcome-container"></div>
+        <div id="btn-container"></div>
+    </header>
+    <nav class="sidebar">
+        <div class="logo menu-item">
+            <img class="icon" src="assets/bulletin-board.svg" alt="QuestBoard">
+            <h3>QuestBoard</h3>
+        </div>
+        <div id="main-menu">
+            <div class="menu-item">
+                <img src="assets/home.svg" alt="home" class="icon">
+                <a href="#">Hearth</a>
+            </div>
+            <div class="menu-item">
+                <img src="assets/home.svg" alt="home" class="icon">
+                <a href="#">Hearth</a>
+            </div>
+            <div class="menu-item">
+                <img src="assets/home.svg" alt="home" class="icon">
+                <a href="#">Hearth</a>
+            </div>
+            <div class="menu-item">
+                <img src="assets/home.svg" alt="home" class="icon">
+                <a href="#">Hearth</a>
+            </div>
+            <div class="menu-item">
+                <img src="assets/home.svg" alt="home" class="icon">
+                <a href="#">Hearth</a>
+            </div>
+            <div class="menu-item">
+                <img src="assets/home.svg" alt="home" class="icon">
+                <a href="#">Hearth</a>
+            </div>
+        </div>
+        <div id="second-menu">
+            <div class="menu-item">Settings</div>
+            <div class="menu-item">Support</div>
+            <div class="menu-item">Privacy</div>
+        </div>
+    </nav>
+    <main class="content">Everything else goes here
         <div id="quests">Quests go here</div>
         <div id="misc">Announcements and Trending here</div>
     </main>
 </body>
+
 </html>
